@@ -46,7 +46,7 @@ export default function CreatePaste() {
     setSuccess(false);
 
     try {
-      const res = await axios.post("http://localhost:8080/api/pastes", {
+      const res = await axios.post("https://paste-backend-production-9ced.up.railway.app/pastes", {
         content,
         expiryMinutes: expiry,
       });
