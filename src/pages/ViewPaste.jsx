@@ -12,7 +12,7 @@ export default function ViewPaste() {
 
   useEffect(() => {
     axios
-      .get(`https://paste-backend-production-9ced.up.railway.app/pastes/${id}`)
+      .get(`https://paste-backend-production-ddbe.up.railway.app/pastes/${id}`)
       .then((res) => setContent(res.data.content))
       .catch(() => setContent("Paste not found ❌"));
   }, [id]);
